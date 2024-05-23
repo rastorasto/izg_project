@@ -7,11 +7,45 @@
 
 #include <student/gpu.hpp>
 
+void clearImage(Image*img, uint32_t w, uint32_t h,glm::vec4 value){
+  for(uint32_t y=0;y<h;++y){
+    for(uint32_t x=0;x<w;++x){
+      uint8_t *ptr = (uint8_t*)img->data;
+      ptr += y*img->pitch + x*img->bytesPerPixel;
+      if(img->format == Image::UINT8){
+        for(uint32_t i=0;i<img->channels;++i)
+          ptr[i] = (uint8_t)value[img->channelTypes[i]]*255.f; 
+      }
+      if(img->format == Image::FLOAT32){
+        float *ptr2 = (float*)ptr;
+        for(uint32_t i=0;i<img->channels;++i)
+          ptr2[i] = value[img->channelTypes[i]]; 
+      }
+    }
+  }
+}
+
+void clear(Framebuffer*fbo,ClearCommand cc){
+  if(cc.clearColor && fbo->color.data){
+    clearImage(&fbo->color,fbo->width,fbo->height,cc.color);
+  }
+  if(cc.clearDepth && fbo->depth.data){
+    clearImage(&fbo->depth,fbo->width,fbo->height,glm::vec4(cc.depth));
+  }
+} 
 
 //! [izg_enqueue]
 void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
   (void)mem;
   (void)cb;
+
+  for(uint32_t i;i<cb.nofCommands;i++){
+    if(cb.commands[i].type == CommandType::CLEAR){
+      ClearCommand cc = cb.commands[i].data.clearCommand;
+      Framebuffer *fbo = mem.framebuffers+mem.activatedFramebuffer;
+      clear(fbo,cc); 
+    }
+  }
   /// \todo Tato funkce reprezentuje funkcionalitu grafické karty.<br>
   /// Měla by umět zpracovat command buffer, čistit framebuffer a kresli.<br>
   /// mem obsahuje paměť grafické karty.
