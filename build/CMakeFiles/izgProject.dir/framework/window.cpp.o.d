@@ -1,246 +1,278 @@
 CMakeFiles/izgProject.dir/framework/window.cpp.o: \
- /Users/void/Downloads/izg_project/framework/window.cpp \
- /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
- /usr/include/features-time64.h \
- /usr/include/aarch64-linux-gnu/bits/wordsize.h \
- /usr/include/aarch64-linux-gnu/bits/timesize.h \
- /usr/include/aarch64-linux-gnu/sys/cdefs.h \
- /usr/include/aarch64-linux-gnu/bits/long-double.h \
- /usr/include/aarch64-linux-gnu/gnu/stubs.h \
- /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
- /Users/void/Downloads/izg_project/framework/window.hpp \
- /usr/include/c++/13/functional \
- /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h \
- /usr/include/c++/13/bits/stl_function.h /usr/include/c++/13/bits/move.h \
- /usr/include/c++/13/type_traits /usr/include/c++/13/backward/binders.h \
- /usr/include/c++/13/tuple /usr/include/c++/13/bits/stl_pair.h \
- /usr/include/c++/13/bits/utility.h \
- /usr/include/c++/13/bits/uses_allocator.h \
- /usr/include/c++/13/bits/invoke.h \
- /usr/include/c++/13/bits/functional_hash.h \
- /usr/include/c++/13/bits/hash_bytes.h /usr/include/c++/13/bits/refwrap.h \
- /usr/include/c++/13/bits/std_function.h /usr/include/c++/13/new \
- /usr/include/c++/13/bits/exception.h /usr/include/c++/13/typeinfo \
- /usr/include/c++/13/bits/functexcept.h \
- /usr/include/c++/13/bits/exception_defines.h \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/requires_hosted.h \
- /usr/include/c++/13/initializer_list \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/stl_algobase.h \
- /usr/include/c++/13/bits/cpp_type_traits.h \
- /usr/include/c++/13/ext/type_traits.h \
- /usr/include/c++/13/ext/numeric_traits.h \
- /usr/include/c++/13/bits/stl_iterator_base_types.h \
- /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/13/bits/concept_check.h \
- /usr/include/c++/13/debug/assertions.h \
- /usr/include/c++/13/bits/stl_iterator.h \
- /usr/include/c++/13/bits/ptr_traits.h /usr/include/c++/13/debug/debug.h \
- /usr/include/c++/13/bits/predefined_ops.h /usr/include/c++/13/bit \
- /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/ext/alloc_traits.h \
- /usr/include/c++/13/bits/alloc_traits.h \
- /usr/include/c++/13/bits/stl_construct.h \
- /usr/include/c++/13/bits/memoryfwd.h \
- /usr/include/c++/13/bits/allocator.h \
- /usr/include/aarch64-linux-gnu/c++/13/bits/c++allocator.h \
- /usr/include/c++/13/bits/new_allocator.h \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/range_access.h \
- /usr/include/c++/13/bits/erase_if.h \
- /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
- /usr/include/c++/13/bits/uses_allocator_args.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/array \
- /usr/include/c++/13/compare /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/c++/13/bits/stl_tempbuf.h /usr/include/c++/13/cstdlib \
- /usr/include/stdlib.h \
- /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
- /usr/include/aarch64-linux-gnu/bits/waitflags.h \
- /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
- /usr/include/aarch64-linux-gnu/bits/floatn.h \
- /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
- /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/aarch64-linux-gnu/sys/types.h \
- /usr/include/aarch64-linux-gnu/bits/types.h \
- /usr/include/aarch64-linux-gnu/bits/typesizes.h \
- /usr/include/aarch64-linux-gnu/bits/time64.h \
- /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
- /usr/include/aarch64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
- /usr/include/aarch64-linux-gnu/bits/endian.h \
- /usr/include/aarch64-linux-gnu/bits/endianness.h \
- /usr/include/aarch64-linux-gnu/bits/byteswap.h \
- /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
- /usr/include/aarch64-linux-gnu/sys/select.h \
- /usr/include/aarch64-linux-gnu/bits/select.h \
- /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
- /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
- /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/map \
- /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_main.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_stdinc.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include-config-/SDL2/SDL_config.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_platform.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/begin_code.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/close_code.h \
- /usr/include/stdio.h /usr/lib/gcc/aarch64-linux-gnu/13/include/stdarg.h \
- /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/c++/13/stdlib.h /usr/include/string.h \
- /usr/include/strings.h /usr/include/wchar.h \
- /usr/include/aarch64-linux-gnu/bits/wchar.h \
- /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
+ /home/mnau/izg_project/framework/window.cpp /usr/include/stdc-predef.h \
+ /usr/include/assert.h /usr/include/features.h \
+ /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /home/mnau/izg_project/framework/window.hpp \
+ /usr/include/c++/14.1.1/functional \
+ /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
+ /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/14.1.1/pstl/pstl_config.h \
+ /usr/include/c++/14.1.1/bits/stl_function.h \
+ /usr/include/c++/14.1.1/bits/move.h /usr/include/c++/14.1.1/type_traits \
+ /usr/include/c++/14.1.1/bits/version.h \
+ /usr/include/c++/14.1.1/backward/binders.h /usr/include/c++/14.1.1/tuple \
+ /usr/include/c++/14.1.1/bits/stl_pair.h \
+ /usr/include/c++/14.1.1/bits/utility.h \
+ /usr/include/c++/14.1.1/bits/uses_allocator.h \
+ /usr/include/c++/14.1.1/bits/invoke.h \
+ /usr/include/c++/14.1.1/bits/functional_hash.h \
+ /usr/include/c++/14.1.1/bits/hash_bytes.h \
+ /usr/include/c++/14.1.1/bits/refwrap.h \
+ /usr/include/c++/14.1.1/bits/std_function.h /usr/include/c++/14.1.1/new \
+ /usr/include/c++/14.1.1/bits/exception.h \
+ /usr/include/c++/14.1.1/typeinfo \
+ /usr/include/c++/14.1.1/bits/functexcept.h \
+ /usr/include/c++/14.1.1/bits/exception_defines.h \
+ /usr/include/c++/14.1.1/unordered_map \
+ /usr/include/c++/14.1.1/bits/requires_hosted.h \
+ /usr/include/c++/14.1.1/initializer_list \
+ /usr/include/c++/14.1.1/bits/unordered_map.h \
+ /usr/include/c++/14.1.1/bits/hashtable.h \
+ /usr/include/c++/14.1.1/bits/hashtable_policy.h \
+ /usr/include/c++/14.1.1/bits/stl_algobase.h \
+ /usr/include/c++/14.1.1/bits/cpp_type_traits.h \
+ /usr/include/c++/14.1.1/ext/type_traits.h \
+ /usr/include/c++/14.1.1/ext/numeric_traits.h \
+ /usr/include/c++/14.1.1/bits/stl_iterator_base_types.h \
+ /usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/14.1.1/bits/concept_check.h \
+ /usr/include/c++/14.1.1/debug/assertions.h \
+ /usr/include/c++/14.1.1/bits/stl_iterator.h \
+ /usr/include/c++/14.1.1/bits/ptr_traits.h \
+ /usr/include/c++/14.1.1/debug/debug.h \
+ /usr/include/c++/14.1.1/bits/predefined_ops.h \
+ /usr/include/c++/14.1.1/bit /usr/include/c++/14.1.1/concepts \
+ /usr/include/c++/14.1.1/ext/aligned_buffer.h \
+ /usr/include/c++/14.1.1/ext/alloc_traits.h \
+ /usr/include/c++/14.1.1/bits/alloc_traits.h \
+ /usr/include/c++/14.1.1/bits/stl_construct.h \
+ /usr/include/c++/14.1.1/bits/memoryfwd.h \
+ /usr/include/c++/14.1.1/bits/allocator.h \
+ /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/14.1.1/bits/new_allocator.h \
+ /usr/include/c++/14.1.1/bits/enable_special_members.h \
+ /usr/include/c++/14.1.1/bits/node_handle.h \
+ /usr/include/c++/14.1.1/bits/range_access.h \
+ /usr/include/c++/14.1.1/bits/erase_if.h \
+ /usr/include/c++/14.1.1/bits/memory_resource.h \
+ /usr/include/c++/14.1.1/cstddef \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h \
+ /usr/include/c++/14.1.1/bits/uses_allocator_args.h \
+ /usr/include/c++/14.1.1/vector \
+ /usr/include/c++/14.1.1/bits/stl_uninitialized.h \
+ /usr/include/c++/14.1.1/bits/stl_vector.h \
+ /usr/include/c++/14.1.1/bits/stl_bvector.h \
+ /usr/include/c++/14.1.1/bits/vector.tcc /usr/include/c++/14.1.1/array \
+ /usr/include/c++/14.1.1/compare /usr/include/c++/14.1.1/map \
+ /usr/include/c++/14.1.1/bits/stl_tree.h \
+ /usr/include/c++/14.1.1/bits/stl_map.h \
+ /usr/include/c++/14.1.1/bits/stl_multimap.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_main.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_stdinc.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include-config-/SDL2/SDL_config.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_platform.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/begin_code.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/close_code.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
+ /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
+ /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
+ /usr/include/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/endianness.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/types/sigset_t.h /usr/include/bits/types/__sigset_t.h \
+ /usr/include/bits/types/struct_timeval.h \
+ /usr/include/bits/types/struct_timespec.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
+ /usr/include/bits/pthreadtypes-arch.h \
+ /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
+ /usr/include/bits/struct_rwlock.h /usr/include/stdio.h \
+ /usr/include/bits/libc-header-start.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
+ /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
+ /usr/include/bits/floatn-common.h /usr/include/c++/14.1.1/stdlib.h \
+ /usr/include/c++/14.1.1/cstdlib /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
+ /usr/include/c++/14.1.1/bits/std_abs.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/wchar.h /usr/include/bits/wchar.h \
+ /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
  /usr/include/inttypes.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
- /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h /usr/include/ctype.h \
- /usr/include/c++/13/math.h /usr/include/c++/13/cmath /usr/include/math.h \
- /usr/include/aarch64-linux-gnu/bits/math-vector.h \
- /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/aarch64-linux-gnu/bits/fp-logb.h \
- /usr/include/aarch64-linux-gnu/bits/fp-fast.h \
- /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
- /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/aarch64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
- /usr/include/c++/13/tr1/gamma.tcc \
- /usr/include/c++/13/tr1/special_function_util.h \
- /usr/include/c++/13/tr1/bessel_function.tcc \
- /usr/include/c++/13/tr1/beta_function.tcc \
- /usr/include/c++/13/tr1/ell_integral.tcc \
- /usr/include/c++/13/tr1/exp_integral.tcc \
- /usr/include/c++/13/tr1/hypergeometric.tcc \
- /usr/include/c++/13/tr1/legendre_function.tcc \
- /usr/include/c++/13/tr1/modified_bessel_func.tcc \
- /usr/include/c++/13/tr1/poly_hermite.tcc \
- /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/float.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_assert.h \
- /usr/include/signal.h \
- /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
- /usr/include/aarch64-linux-gnu/bits/signum-arch.h \
- /usr/include/aarch64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/aarch64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/aarch64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/aarch64-linux-gnu/bits/siginfo-consts-arch.h \
- /usr/include/aarch64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/aarch64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/aarch64-linux-gnu/bits/sigaction.h \
- /usr/include/aarch64-linux-gnu/bits/sigcontext.h \
- /usr/include/aarch64-linux-gnu/asm/sigcontext.h \
- /usr/include/linux/types.h /usr/include/aarch64-linux-gnu/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/aarch64-linux-gnu/asm/posix_types.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/aarch64-linux-gnu/asm/sve_context.h \
- /usr/include/aarch64-linux-gnu/bits/types/stack_t.h \
- /usr/include/aarch64-linux-gnu/sys/ucontext.h \
- /usr/include/aarch64-linux-gnu/sys/procfs.h \
- /usr/include/aarch64-linux-gnu/sys/time.h \
- /usr/include/aarch64-linux-gnu/sys/user.h \
- /usr/include/aarch64-linux-gnu/bits/procfs.h \
- /usr/include/aarch64-linux-gnu/bits/procfs-id.h \
- /usr/include/aarch64-linux-gnu/bits/procfs-prregset.h \
- /usr/include/aarch64-linux-gnu/bits/procfs-extra.h \
- /usr/include/aarch64-linux-gnu/bits/sigstack.h \
- /usr/include/aarch64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
- /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
- /usr/include/aarch64-linux-gnu/bits/environments.h \
- /usr/include/aarch64-linux-gnu/bits/confname.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
- /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /usr/include/aarch64-linux-gnu/bits/ss_flags.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/aarch64-linux-gnu/bits/sigthread.h \
- /usr/include/aarch64-linux-gnu/bits/signal_ext.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_atomic.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_platform.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_audio.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_error.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_endian.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_mutex.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_thread.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_rwops.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_clipboard.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_cpuinfo.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/arm_neon.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/arm_fp16.h \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/arm_bf16.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_events.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_video.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_pixels.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_rect.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_surface.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_blendmode.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_keyboard.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_keycode.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_scancode.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_mouse.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_joystick.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_guid.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_gamecontroller.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_sensor.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_quit.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_gesture.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_touch.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_filesystem.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_haptic.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_hidapi.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_hints.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_loadso.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_log.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_messagebox.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_metal.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_power.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_render.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_shape.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_system.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_timer.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_version.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_locale.h \
- /Users/void/Downloads/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_misc.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h /usr/include/ctype.h \
+ /usr/include/c++/14.1.1/math.h /usr/include/c++/14.1.1/cmath \
+ /usr/include/math.h /usr/include/bits/math-vector.h \
+ /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/14.1.1/bits/specfun.h \
+ /usr/include/c++/14.1.1/limits /usr/include/c++/14.1.1/tr1/gamma.tcc \
+ /usr/include/c++/14.1.1/tr1/special_function_util.h \
+ /usr/include/c++/14.1.1/tr1/bessel_function.tcc \
+ /usr/include/c++/14.1.1/tr1/beta_function.tcc \
+ /usr/include/c++/14.1.1/tr1/ell_integral.tcc \
+ /usr/include/c++/14.1.1/tr1/exp_integral.tcc \
+ /usr/include/c++/14.1.1/tr1/hypergeometric.tcc \
+ /usr/include/c++/14.1.1/tr1/legendre_function.tcc \
+ /usr/include/c++/14.1.1/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/14.1.1/tr1/poly_hermite.tcc \
+ /usr/include/c++/14.1.1/tr1/poly_laguerre.tcc \
+ /usr/include/c++/14.1.1/tr1/riemann_zeta.tcc \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/float.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_assert.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_atomic.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_platform.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_audio.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_error.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_endian.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_mutex.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_thread.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_rwops.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_clipboard.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_cpuinfo.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/immintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/x86gprintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/ia32intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/adxintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/bmiintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/bmi2intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/cetintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/cldemoteintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/clflushoptintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/clwbintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/clzerointrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/cmpccxaddintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/enqcmdintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/fxsrintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/lzcntintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/lwpintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/movdirintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/mwaitintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/mwaitxintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/pconfigintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/popcntintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/pkuintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/prfchiintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/raointintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/rdseedintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/rtmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/serializeintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/sgxintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/tbmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/tsxldtrkintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/uintrintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/waitpkgintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/wbnoinvdintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/xsaveintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/xsavecintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/xsaveoptintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/xsavesintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/xtestintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/hresetintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/usermsrintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/pmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/tmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/smmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/wmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avxintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avxvnniintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avxifmaintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avxvnniint8intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avxvnniint16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx2intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512fintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512erintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512pfintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512cdintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512bwintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512dqintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vlbwintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vldqintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512ifmaintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512ifmavlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vbmiintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vbmivlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx5124fmapsintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx5124vnniwintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vpopcntdqintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vbmi2intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vbmi2vlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vnniintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vnnivlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vpopcntdqvlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512bitalgintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512bitalgvlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vp2intersectintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vp2intersectvlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512fp16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512fp16vlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/shaintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/sm3intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/sha512intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/sm4intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/fmaintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/f16cintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/gfniintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/vaesintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/vpclmulqdqintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512bf16vlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512bf16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avxneconvertintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/amxtileintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/amxint8intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/amxbf16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/amxcomplexintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/prfchwintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/keylockerintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/amxfp16intrin.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_events.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_video.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_pixels.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_rect.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_surface.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_blendmode.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_keyboard.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_keycode.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_scancode.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_mouse.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_joystick.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_guid.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_gamecontroller.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_sensor.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_quit.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_gesture.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_touch.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_filesystem.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_haptic.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_hidapi.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_hints.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_loadso.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_log.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_messagebox.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_metal.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_power.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_render.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_shape.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_system.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_timer.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_version.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_locale.h \
+ /home/mnau/izg_project/build/libs/SDL-release-2.30.2/include/SDL2/SDL_misc.h

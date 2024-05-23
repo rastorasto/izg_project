@@ -1,4 +1,4 @@
-# Install script for directory: /Users/void/Downloads/izg_project/libs/TxtUtils
+# Install script for directory: /home/mnau/izg_project/libs/TxtUtils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -43,21 +43,21 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/void/Downloads/izg_project/build/libs/TxtUtils/libTxtUtils.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/mnau/izg_project/build/libs/TxtUtils/libTxtUtils.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/TxtUtils" TYPE FILE FILES "/Users/void/Downloads/izg_project/build/libs/TxtUtils/TxtUtils/txtutils_export.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/TxtUtils" TYPE FILE FILES "/home/mnau/izg_project/build/libs/TxtUtils/TxtUtils/txtutils_export.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/TxtUtils" TYPE FILE FILES "/Users/void/Downloads/izg_project/libs/TxtUtils/src/TxtUtils/TxtUtils.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/TxtUtils" TYPE FILE FILES "/home/mnau/izg_project/libs/TxtUtils/src/TxtUtils/TxtUtils.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Devel" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/TxtUtils" TYPE FILE FILES
-    "/Users/void/Downloads/izg_project/build/libs/TxtUtils/TxtUtils/TxtUtilsConfig.cmake"
-    "/Users/void/Downloads/izg_project/build/libs/TxtUtils/TxtUtils/TxtUtilsConfigVersion.cmake"
+    "/home/mnau/izg_project/build/libs/TxtUtils/TxtUtils/TxtUtilsConfig.cmake"
+    "/home/mnau/izg_project/build/libs/TxtUtils/TxtUtils/TxtUtilsConfigVersion.cmake"
     )
 endif()
 
@@ -65,7 +65,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/TxtUtils/TxtUtilsTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/TxtUtils/TxtUtilsTargets.cmake"
-         "/Users/void/Downloads/izg_project/build/libs/TxtUtils/CMakeFiles/Export/5e94c025fee39aebbb470edc8cd92f59/TxtUtilsTargets.cmake")
+         "/home/mnau/izg_project/build/libs/TxtUtils/CMakeFiles/Export/5e94c025fee39aebbb470edc8cd92f59/TxtUtilsTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/TxtUtils/TxtUtilsTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -78,9 +78,9 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/TxtUtils" TYPE FILE FILES "/Users/void/Downloads/izg_project/build/libs/TxtUtils/CMakeFiles/Export/5e94c025fee39aebbb470edc8cd92f59/TxtUtilsTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/TxtUtils" TYPE FILE FILES "/home/mnau/izg_project/build/libs/TxtUtils/CMakeFiles/Export/5e94c025fee39aebbb470edc8cd92f59/TxtUtilsTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/TxtUtils" TYPE FILE FILES "/Users/void/Downloads/izg_project/build/libs/TxtUtils/CMakeFiles/Export/5e94c025fee39aebbb470edc8cd92f59/TxtUtilsTargets-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/TxtUtils" TYPE FILE FILES "/home/mnau/izg_project/build/libs/TxtUtils/CMakeFiles/Export/5e94c025fee39aebbb470edc8cd92f59/TxtUtilsTargets-noconfig.cmake")
   endif()
 endif()
 

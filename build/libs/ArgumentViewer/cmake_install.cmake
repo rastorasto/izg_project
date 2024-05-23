@@ -1,4 +1,4 @@
-# Install script for directory: /Users/void/Downloads/izg_project/libs/ArgumentViewer
+# Install script for directory: /home/mnau/izg_project/libs/ArgumentViewer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -43,25 +43,25 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/void/Downloads/izg_project/build/libs/ArgumentViewer/libArgumentViewer.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/mnau/izg_project/build/libs/ArgumentViewer/libArgumentViewer.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ArgumentViewer" TYPE FILE FILES "/Users/void/Downloads/izg_project/build/libs/ArgumentViewer/ArgumentViewer/argumentviewer_export.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ArgumentViewer" TYPE FILE FILES "/home/mnau/izg_project/build/libs/ArgumentViewer/ArgumentViewer/argumentviewer_export.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Devel" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ArgumentViewer" TYPE FILE FILES
-    "/Users/void/Downloads/izg_project/libs/ArgumentViewer/src/ArgumentViewer/ArgumentViewer.h"
-    "/Users/void/Downloads/izg_project/libs/ArgumentViewer/src/ArgumentViewer/Fwd.h"
-    "/Users/void/Downloads/izg_project/libs/ArgumentViewer/src/ArgumentViewer/Exception.h"
+    "/home/mnau/izg_project/libs/ArgumentViewer/src/ArgumentViewer/ArgumentViewer.h"
+    "/home/mnau/izg_project/libs/ArgumentViewer/src/ArgumentViewer/Fwd.h"
+    "/home/mnau/izg_project/libs/ArgumentViewer/src/ArgumentViewer/Exception.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Devel" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ArgumentViewer" TYPE FILE FILES
-    "/Users/void/Downloads/izg_project/build/libs/ArgumentViewer/ArgumentViewer/ArgumentViewerConfig.cmake"
-    "/Users/void/Downloads/izg_project/build/libs/ArgumentViewer/ArgumentViewer/ArgumentViewerConfigVersion.cmake"
+    "/home/mnau/izg_project/build/libs/ArgumentViewer/ArgumentViewer/ArgumentViewerConfig.cmake"
+    "/home/mnau/izg_project/build/libs/ArgumentViewer/ArgumentViewer/ArgumentViewerConfigVersion.cmake"
     )
 endif()
 
@@ -69,7 +69,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ArgumentViewer/ArgumentViewerTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ArgumentViewer/ArgumentViewerTargets.cmake"
-         "/Users/void/Downloads/izg_project/build/libs/ArgumentViewer/CMakeFiles/Export/5dddf4ae052ffa1493c994b9af8669f5/ArgumentViewerTargets.cmake")
+         "/home/mnau/izg_project/build/libs/ArgumentViewer/CMakeFiles/Export/5dddf4ae052ffa1493c994b9af8669f5/ArgumentViewerTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ArgumentViewer/ArgumentViewerTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -82,9 +82,9 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ArgumentViewer" TYPE FILE FILES "/Users/void/Downloads/izg_project/build/libs/ArgumentViewer/CMakeFiles/Export/5dddf4ae052ffa1493c994b9af8669f5/ArgumentViewerTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ArgumentViewer" TYPE FILE FILES "/home/mnau/izg_project/build/libs/ArgumentViewer/CMakeFiles/Export/5dddf4ae052ffa1493c994b9af8669f5/ArgumentViewerTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ArgumentViewer" TYPE FILE FILES "/Users/void/Downloads/izg_project/build/libs/ArgumentViewer/CMakeFiles/Export/5dddf4ae052ffa1493c994b9af8669f5/ArgumentViewerTargets-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ArgumentViewer" TYPE FILE FILES "/home/mnau/izg_project/build/libs/ArgumentViewer/CMakeFiles/Export/5dddf4ae052ffa1493c994b9af8669f5/ArgumentViewerTargets-noconfig.cmake")
   endif()
 endif()
 

@@ -1,8 +1,8 @@
-if (NOT EXISTS "/Users/void/Downloads/izg_project/build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/Users/void/Downloads/izg_project/build/install_manifest.txt\"")
-endif(NOT EXISTS "/Users/void/Downloads/izg_project/build/install_manifest.txt")
+if (NOT EXISTS "/home/mnau/izg_project/build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/home/mnau/izg_project/build/install_manifest.txt\"")
+endif(NOT EXISTS "/home/mnau/izg_project/build/install_manifest.txt")
 
-file(READ "/Users/void/Downloads/izg_project/build/install_manifest.txt" files)
+file(READ "/home/mnau/izg_project/build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach (file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

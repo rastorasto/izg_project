@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.25)
+cmake_policy(VERSION 2.8.3...3.27)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -51,7 +51,7 @@ add_library(TxtUtils::TxtUtils STATIC IMPORTED)
 
 set_target_properties(TxtUtils::TxtUtils PROPERTIES
   COMPATIBLE_INTERFACE_STRING "TxtUtils_MAJOR_VERSION"
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/void/Downloads/izg_project/libs/TxtUtils/src;/Users/void/Downloads/izg_project/build/libs/TxtUtils;/Users/void/Downloads/izg_project/libs/TxtUtils"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/mnau/izg_project/libs/TxtUtils/src;/home/mnau/izg_project/build/libs/TxtUtils;/home/mnau/izg_project/libs/TxtUtils"
   INTERFACE_LINK_LIBRARIES "MealyMachine::MealyMachine"
   INTERFACE_TxtUtils_MAJOR_VERSION "1"
 )
@@ -60,7 +60,7 @@ set_target_properties(TxtUtils::TxtUtils PROPERTIES
 set_property(TARGET TxtUtils::TxtUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(TxtUtils::TxtUtils PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/Users/void/Downloads/izg_project/build/libs/TxtUtils/libTxtUtils.a"
+  IMPORTED_LOCATION_NOCONFIG "/home/mnau/izg_project/build/libs/TxtUtils/libTxtUtils.a"
   )
 
 # Make sure the targets which have been exported in some other

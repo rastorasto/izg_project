@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.25)
+cmake_policy(VERSION 2.8.3...3.27)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -52,7 +52,7 @@ add_library(ArgumentViewer::ArgumentViewer STATIC IMPORTED)
 set_target_properties(ArgumentViewer::ArgumentViewer PROPERTIES
   COMPATIBLE_INTERFACE_STRING "ArgumentViewer_MAJOR_VERSION"
   INTERFACE_ArgumentViewer_MAJOR_VERSION "1"
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/void/Downloads/izg_project/libs/ArgumentViewer/src;/Users/void/Downloads/izg_project/build/libs/ArgumentViewer;/Users/void/Downloads/izg_project/libs/ArgumentViewer"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/mnau/izg_project/libs/ArgumentViewer/src;/home/mnau/izg_project/build/libs/ArgumentViewer;/home/mnau/izg_project/libs/ArgumentViewer"
   INTERFACE_LINK_LIBRARIES "MealyMachine::MealyMachine;TxtUtils::TxtUtils"
 )
 
@@ -60,7 +60,7 @@ set_target_properties(ArgumentViewer::ArgumentViewer PROPERTIES
 set_property(TARGET ArgumentViewer::ArgumentViewer APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(ArgumentViewer::ArgumentViewer PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/Users/void/Downloads/izg_project/build/libs/ArgumentViewer/libArgumentViewer.a"
+  IMPORTED_LOCATION_NOCONFIG "/home/mnau/izg_project/build/libs/ArgumentViewer/libArgumentViewer.a"
   )
 
 # Make sure the targets which have been exported in some other

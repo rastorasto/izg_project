@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.25)
+cmake_policy(VERSION 2.8.3...3.27)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -51,7 +51,7 @@ add_library(MealyMachine::MealyMachine STATIC IMPORTED)
 
 set_target_properties(MealyMachine::MealyMachine PROPERTIES
   COMPATIBLE_INTERFACE_STRING "MealyMachine_MAJOR_VERSION"
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/void/Downloads/izg_project/libs/MealyMachine/src;/Users/void/Downloads/izg_project/build/libs/MealyMachine;/Users/void/Downloads/izg_project/libs/MealyMachine"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/mnau/izg_project/libs/MealyMachine/src;/home/mnau/izg_project/build/libs/MealyMachine;/home/mnau/izg_project/libs/MealyMachine"
   INTERFACE_MealyMachine_MAJOR_VERSION "1"
 )
 
@@ -59,7 +59,7 @@ set_target_properties(MealyMachine::MealyMachine PROPERTIES
 set_property(TARGET MealyMachine::MealyMachine APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(MealyMachine::MealyMachine PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/Users/void/Downloads/izg_project/build/libs/MealyMachine/libMealyMachine.a"
+  IMPORTED_LOCATION_NOCONFIG "/home/mnau/izg_project/build/libs/MealyMachine/libMealyMachine.a"
   )
 
 # This file does not depend on other imported targets which have
