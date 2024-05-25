@@ -39,7 +39,7 @@ void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
   (void)mem;
   (void)cb;
 
-  for(uint32_t i;i<cb.nofCommands;i++){
+  for(uint32_t i;i<cb.nofCommands;++i){
     if(cb.commands[i].type == CommandType::CLEAR){
       ClearCommand cc = cb.commands[i].data.clearCommand;
       Framebuffer *fbo = mem.framebuffers+mem.activatedFramebuffer;
