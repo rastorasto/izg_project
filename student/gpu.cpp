@@ -10,14 +10,14 @@
 void clearImage(Image*img, uint32_t w, uint32_t h,glm::vec4 value){
   for(uint32_t y=0;y<h;++y){
     for(uint32_t x=0;x<w;++x){
-      uint8_t *ptr = (uint8_t*)img->data;
+      uint8_t*ptr = (uint8_t*)img->data;
       ptr += y*img->pitch + x*img->bytesPerPixel;
       if(img->format == Image::UINT8){
         for(uint32_t i=0;i<img->channels;++i)
           ptr[i] = (uint8_t)value[img->channelTypes[i]]*255.f; 
       }
       if(img->format == Image::FLOAT32){
-        float *ptr2 = (float*)ptr;
+        float*ptr2 = (float*)ptr;
         for(uint32_t i=0;i<img->channels;++i)
           ptr2[i] = value[img->channelTypes[i]]; 
       }
@@ -39,11 +39,35 @@ void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
   (void)mem;
   (void)cb;
 
-  for(uint32_t i;i<cb.nofCommands;++i){
+  for(uint32_t i=0;i<cb.nofCommands;i++){
     if(cb.commands[i].type == CommandType::CLEAR){
       ClearCommand cc = cb.commands[i].data.clearCommand;
-      Framebuffer *fbo = mem.framebuffers+mem.activatedFramebuffer;
+      Framebuffer*fbo = mem.framebuffers+mem.activatedFramebuffer;
       clear(fbo,cc); 
+    }
+    if(cb.commands[i].type == CommandType::BIND_FRAMEBUFFER){
+      BindFramebufferCommand cc = cb.commands[i].data.bindFramebufferCommand;
+      mem.activatedFramebuffer = cc.id;
+    }
+    if(cb.commands[i].type == CommandType::BIND_PROGRAM){
+      BindProgramCommand cc = cb.commands[i].data.bindProgramCommand;
+      mem.activatedProgram = cc.id;
+    }
+    if(cb.commands[i].type == CommandType::BIND_VERTEXARRAY){
+      BindVertexArrayCommand cc = cb.commands[i].data.bindVertexArrayCommand;
+      mem.activatedVertexArray = cc.id;
+    }
+    if(cb.commands[i].type == CommandType::DRAW){
+      DrawCommand cc = cb.commands[i].data.drawCommand;
+      for(uint32_t gl_VertexID=0; gl_VertexID < cc.nofVertices; ++gl_VertexID){
+        InVertex inV;
+        inV.gl_VertexID = gl_VertexID;
+        OutVertex outV;
+        ShaderInterface si;
+        si.gl_DrawID = mem.gl_DrawID;
+        mem.programs[mem.activatedProgram].vertexShader(outV, inV,si);
+      }
+      mem.gl_DrawID++;
     }
   }
   /// \todo Tato funkce reprezentuje funkcionalitu grafické karty.<br>
