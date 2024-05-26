@@ -77,36 +77,48 @@ void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
   (void)cb;
   mem.gl_DrawID = 0;
   for(uint32_t i=0;i<cb.nofCommands;i++){
-    if(cb.commands[i].type == CommandType::CLEAR){
-      ClearCommand cc = cb.commands[i].data.clearCommand;
-      Framebuffer*fbo = mem.framebuffers+mem.activatedFramebuffer;
-      clear(fbo,cc); 
-    }
-    if(cb.commands[i].type == CommandType::BIND_FRAMEBUFFER){
-      BindFramebufferCommand cc = cb.commands[i].data.bindFramebufferCommand;
-      mem.activatedFramebuffer = cc.id;
-    }
-    if(cb.commands[i].type == CommandType::BIND_PROGRAM){
-      BindProgramCommand cc = cb.commands[i].data.bindProgramCommand;
-      mem.activatedProgram = cc.id;
-    }
-    if(cb.commands[i].type == CommandType::BIND_VERTEXARRAY){
-      BindVertexArrayCommand cc = cb.commands[i].data.bindVertexArrayCommand;
-      mem.activatedVertexArray = cc.id;
-    }
-    if(cb.commands[i].type == CommandType::DRAW){
-      DrawCommand cc = cb.commands[i].data.drawCommand;
-      
-      compute_vertices(mem, cc);
-      mem.gl_DrawID++;
-    }
-    if(cb.commands[i].type == CommandType::SET_DRAW_ID){
-      SetDrawIdCommand cc = cb.commands[i].data.setDrawIdCommand;
-      mem.gl_DrawID = cc.id;
-    }
-    if(cb.commands[i].type == CommandType::SUB_COMMAND){
-      SubCommand cc = cb.commands[i].data.subCommand;
-      izg_enqueue(mem, *cc.commandBuffer);
+    CommandType type = cb.commands[i].type;
+
+    switch(type) {
+      case CommandType::CLEAR: {
+        ClearCommand cc = cb.commands[i].data.clearCommand;
+        Framebuffer*fbo = mem.framebuffers+mem.activatedFramebuffer;
+        clear(fbo,cc); 
+        break;
+      }
+      case CommandType::BIND_FRAMEBUFFER: {
+        BindFramebufferCommand cc = cb.commands[i].data.bindFramebufferCommand;
+        mem.activatedFramebuffer = cc.id;
+        break;
+      }
+      case CommandType::BIND_PROGRAM: {
+        BindProgramCommand cc = cb.commands[i].data.bindProgramCommand;
+        mem.activatedProgram = cc.id;
+        break;
+      }
+      case CommandType::BIND_VERTEXARRAY: {
+        BindVertexArrayCommand cc = cb.commands[i].data.bindVertexArrayCommand;
+        mem.activatedVertexArray = cc.id;
+        break;
+      }
+      case CommandType::DRAW: {
+        DrawCommand cc = cb.commands[i].data.drawCommand;  
+        compute_vertices(mem, cc);
+        mem.gl_DrawID++;
+        break;
+      }
+      case CommandType::SET_DRAW_ID: {
+        SetDrawIdCommand cc = cb.commands[i].data.setDrawIdCommand;
+        mem.gl_DrawID = cc.id;
+        break;
+      }
+      case CommandType::SUB_COMMAND: {
+        SubCommand cc = cb.commands[i].data.subCommand;
+        izg_enqueue(mem, *cc.commandBuffer);
+        break;
+      }
+      default:
+        break;
     }
   }
   /// \todo Tato funkce reprezentuje funkcionalitu grafické karty.<br>
