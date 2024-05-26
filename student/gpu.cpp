@@ -69,6 +69,10 @@ void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
       }
       mem.gl_DrawID++;
     }
+    if(cb.commands[i].type == CommandType::SET_DRAW_ID){
+      SetDrawIdCommand cc = cb.commands[i].data.setDrawIdCommand;
+      mem.gl_DrawID = cc.id;
+    }
   }
   /// \todo Tato funkce reprezentuje funkcionalitu grafické karty.<br>
   /// Měla by umět zpracovat command buffer, čistit framebuffer a kresli.<br>
