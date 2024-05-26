@@ -38,7 +38,7 @@ void clear(Framebuffer*fbo,ClearCommand cc){
 void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
   (void)mem;
   (void)cb;
-
+  mem.gl_DrawID = 0;
   for(uint32_t i=0;i<cb.nofCommands;i++){
     if(cb.commands[i].type == CommandType::CLEAR){
       ClearCommand cc = cb.commands[i].data.clearCommand;
@@ -72,6 +72,10 @@ void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
     if(cb.commands[i].type == CommandType::SET_DRAW_ID){
       SetDrawIdCommand cc = cb.commands[i].data.setDrawIdCommand;
       mem.gl_DrawID = cc.id;
+    }
+    if(cb.commands[i].type == CommandType::SUB_COMMAND){
+      SubCommand cc = cb.commands[i].data.subCommand;
+      izg_enqueue(mem, *cc.commandBuffer);
     }
   }
   /// \todo Tato funkce reprezentuje funkcionalitu grafické karty.<br>
