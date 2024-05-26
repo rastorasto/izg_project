@@ -32,7 +32,26 @@ void clear(Framebuffer*fbo,ClearCommand cc){
   if(cc.clearDepth && fbo->depth.data){
     clearImage(&fbo->depth,fbo->width,fbo->height,glm::vec4(cc.depth));
   }
-} 
+}
+
+uint32_t computeVertexID(GPUMemory& mem, VertexArray const& vao, uint32_t shaderInvocation) {
+  if (vao.indexBufferID < 0) {
+    return shaderInvocation;
+  }
+
+  void* indexBuffer = (void*)mem.buffers[vao.indexBufferID].data;
+
+  if (vao.indexType == IndexType::UINT8) {
+    uint8_t* ind = (uint8_t*)indexBuffer + vao.indexOffset;
+    return ind[shaderInvocation];
+  } else if (vao.indexType == IndexType::UINT16) {
+    uint16_t* ind = (uint16_t*)indexBuffer + vao.indexOffset;
+    return ind[shaderInvocation];
+  } else { // if (vao.indexType == IndexType::UINT32)
+    uint32_t* ind = (uint32_t*)indexBuffer + vao.indexOffset;
+    return ind[shaderInvocation];
+  }
+}
 
 //! [izg_enqueue]
 void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
@@ -59,13 +78,21 @@ void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
     }
     if(cb.commands[i].type == CommandType::DRAW){
       DrawCommand cc = cb.commands[i].data.drawCommand;
-      for(uint32_t gl_VertexID=0; gl_VertexID < cc.nofVertices; ++gl_VertexID){
-        InVertex inV;
-        inV.gl_VertexID = gl_VertexID;
+
+      for (uint32_t gl_VertexID = 0; gl_VertexID < cc.nofVertices; ++gl_VertexID) {
+        InVertex  inV;
         OutVertex outV;
         ShaderInterface si;
+
+        if(mem.vertexArrays[mem.activatedVertexArray].indexBufferID != -1){
+          VertexArray vao = mem.vertexArrays[mem.activatedVertexArray];
+          inV.gl_VertexID = computeVertexID(mem, vao, gl_VertexID);
+        } else {
+          inV.gl_VertexID = gl_VertexID;
+        }
+
         si.gl_DrawID = mem.gl_DrawID;
-        mem.programs[mem.activatedProgram].vertexShader(outV, inV,si);
+        mem.programs[mem.activatedProgram].vertexShader(outV, inV, si);
       }
       mem.gl_DrawID++;
     }
