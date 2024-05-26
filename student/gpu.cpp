@@ -53,6 +53,24 @@ uint32_t computeVertexID(GPUMemory& mem, VertexArray const& vao, uint32_t shader
   }
 }
 
+void compute_vertices(GPUMemory& mem, DrawCommand cc){
+  for (uint32_t gl_VertexID = 0; gl_VertexID < cc.nofVertices; ++gl_VertexID) {
+    InVertex  inV;
+    OutVertex outV;
+    ShaderInterface si;
+
+    if(mem.vertexArrays[mem.activatedVertexArray].indexBufferID != -1){
+      VertexArray vao = mem.vertexArrays[mem.activatedVertexArray];
+      inV.gl_VertexID = computeVertexID(mem, vao, gl_VertexID);
+    } else {
+      inV.gl_VertexID = gl_VertexID;
+    }
+
+    si.gl_DrawID = mem.gl_DrawID;
+    mem.programs[mem.activatedProgram].vertexShader(outV, inV, si);
+  }
+}
+
 //! [izg_enqueue]
 void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
   (void)mem;
@@ -78,22 +96,8 @@ void izg_enqueue(GPUMemory&mem,CommandBuffer const&cb){
     }
     if(cb.commands[i].type == CommandType::DRAW){
       DrawCommand cc = cb.commands[i].data.drawCommand;
-
-      for (uint32_t gl_VertexID = 0; gl_VertexID < cc.nofVertices; ++gl_VertexID) {
-        InVertex  inV;
-        OutVertex outV;
-        ShaderInterface si;
-
-        if(mem.vertexArrays[mem.activatedVertexArray].indexBufferID != -1){
-          VertexArray vao = mem.vertexArrays[mem.activatedVertexArray];
-          inV.gl_VertexID = computeVertexID(mem, vao, gl_VertexID);
-        } else {
-          inV.gl_VertexID = gl_VertexID;
-        }
-
-        si.gl_DrawID = mem.gl_DrawID;
-        mem.programs[mem.activatedProgram].vertexShader(outV, inV, si);
-      }
+      
+      compute_vertices(mem, cc);
       mem.gl_DrawID++;
     }
     if(cb.commands[i].type == CommandType::SET_DRAW_ID){
